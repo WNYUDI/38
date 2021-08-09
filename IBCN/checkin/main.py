@@ -36,7 +36,7 @@ if config.TELEGRAM_SESSION_CHARSET == 'base64':
     fp.close()
 else:
     raise Exception('unknown TELEGRAM_SESSION_CHARSET (' +
-                    str(config.TELEGRAM_SESSION_CONTENT) + ')')
+                    str(config.TELEGRAM_SESSION_CHARSET) + ')')
 
 telegram_client = TelegramClient(
     config.TELEGRAM_SESSION_NAME, config.TELEGRAM_API_ID, config.TELEGRAM_API_HASH)
@@ -45,13 +45,13 @@ telegram_client = telegram_client.start()
 
 if telegram_client == None:
     raise Exception('Telegram sign in failed TelegramClient(' +
-                    telegram_client + ')')
+                    str(telegram_client) + ')')
 
 telegram_message = telegram_client.send_message(
     'IBCNbot_bot', '/checkin')
 
 if telegram_message == None:
     raise Exception('Telegram send message failed TelegramMessage(' +
-                    telegram_message + ')')
+                    str(telegram_message) + ')')
 
 print('send message success, please go to Telegram or IBCN website check and confirm whether to check in successfully')
