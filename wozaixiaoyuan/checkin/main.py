@@ -3,9 +3,6 @@
 import requests
 import config
 
-print(config.SESSION)
-print(type(config.SESSION))
-
 if config.SESSION == None or len(config.SESSION) == 0:
     raise Exception('config SESSION (' +
                     str(config.SESSION) + ')')
