@@ -6,43 +6,43 @@ import config
 print(config.SESSION)
 print(type(config.SESSION))
 
-if config.SESSION == None:
+if config.SESSION == None or len(config.SESSION) == 0:
     raise Exception('config SESSION (' +
                     str(config.SESSION) + ')')
 
-if config.LATITUDE == None:
+if config.LATITUDE == None or len(config.LATITUDE) == 0:
     raise Exception('config LATITUDE (' +
                     str(config.LATITUDE) + ')')
 
-if config.LONGITUDE == None:
+if config.LONGITUDE == None or len(config.LONGITUDE) == 0:
     raise Exception('config LONGITUDE (' +
                     str(config.LONGITUDE) + ')')
 
-if config.COUNTRY == None:
+if config.COUNTRY == None or len(config.COUNTRY) == 0:
     raise Exception('config COUNTRY (' +
                     str(config.COUNTRY) + ')')
 
-if config.CITY == None:
+if config.CITY == None or len(config.CITY) == 0:
     raise Exception('config CITY (' +
                     str(config.CITY) + ')')
 
-if config.DISTRICT == None:
+if config.DISTRICT == None or len(config.DISTRICT) == 0:
     raise Exception('config DISTRICT (' +
                     str(config.DISTRICT) + ')')
 
-if config.PROVINCE == None:
+if config.PROVINCE == None or len(config.PROVINCE) == 0:
     raise Exception('config PROVINCE (' +
                     str(config.PROVINCE) + ')')
 
-if config.TOWNSHIP == None:
+if config.TOWNSHIP == None or len(config.TOWNSHIP) == 0:
     raise Exception('config TOWNSHIP (' +
                     str(config.TOWNSHIP) + ')')
 
-if config.STREET == None:
+if config.STREET == None or len(config.STREET) == 0:
     raise Exception('config STREET (' +
                     str(config.STREET) + ')')
 
-if config.AREACODE == None:
+if config.AREACODE == None or len(config.AREACODE) == 0:
     raise Exception('config AREACODE (' +
                     str(config.AREACODE) + ')')
 
