@@ -1,4 +1,4 @@
-name: Create Debugger Action
+name: Create Debugger Action For IBCN Checkin
 
 on:
   workflow_dispatch:

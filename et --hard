@@ -1,0 +1,23 @@
+[33mcommit 4bb2e8452cd4093c959e9f6ea69a702f72ecaa66[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Inyourheart8866 <271257581@qq.com>
+Date:   Wed Aug 25 12:43:55 2021 +0800
+
+    add wozaixiaoyuan checkin
+
+[33mcommit 9d92591ecc13257f95ed7108e9c6a186ceff8ce2[m
+Author: Inyourheart8866 <271257581@qq.com>
+Date:   Mon Aug 9 12:16:05 2021 +0800
+
+    change CI.yml to test-IBCN-checkin.yml
+
+[33mcommit 315b5578799177f3d8ed8532bbb9473e5a24bd11[m
+Author: Inyourheart8866 <271257581@qq.com>
+Date:   Mon Aug 9 09:49:34 2021 +0800
+
+    Fix some bugs: 1. raise str. 2. change raise CONTENT to CHARSET
+
+[33mcommit 83755b722511e001ae2e112bda94b26863c6f288[m
+Author: Inyourheart8866 <271257581@qq.com>
+Date:   Mon Aug 9 09:43:43 2021 +0800
+
+    Just push
