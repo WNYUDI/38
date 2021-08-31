@@ -56,7 +56,7 @@ response = requests.post(
         'township': config.TOWNSHIP,
         'street': config.STREET,
         'areacode': config.AREACODE,
-        'answers': '["0"]'
+        'answers': '["0"，"0"，"1"]'
     }, timeout=60)
 
 if response.status_code != 200:
