@@ -47,6 +47,7 @@ jobs:
           TOWNSHIP: ${{ secrets.WOZAIXIAOYUAN_TOWNSHIP }}
           STREET: ${{ secrets.WOZAIXIAOYUAN_STREET }}
           AREACODE: ${{ secrets.WOZAIXIAOYUAN_AREACODE }}
+          OPTIONS: ${{ secrets.WOZAIXIAOYUAN_OPTIONS }}
 
         run: |
           cd ./wozaixiaoyuan/checkin

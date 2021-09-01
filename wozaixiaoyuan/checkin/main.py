@@ -43,6 +43,10 @@ if config.AREACODE == None or len(config.AREACODE) == 0:
     raise Exception('config AREACODE (' +
                     str(config.AREACODE) + ')')
 
+if config.OPTIONS == None or len(config.OPTIONS) == 0:
+    raise Exception('config AREACODE (' +
+                    str(config.OPTIONS) + ')')
+
 response = requests.post(
     'https://student.wozaixiaoyuan.com/health/save.json', headers={
         'JWSESSION': config.SESSION,
@@ -56,7 +60,7 @@ response = requests.post(
         'township': config.TOWNSHIP,
         'street': config.STREET,
         'areacode': config.AREACODE,
-        'answers': '["0"，"0"，"1"]'
+        'answers': config.OPTIONS
     }, timeout=60)
 
 if response.status_code != 200:
